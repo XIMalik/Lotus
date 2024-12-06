@@ -4,10 +4,7 @@ import { useParams } from "react-router-dom";
 import Intro from "./Intro";
 import Wyg from "./Wyg";
 import Rnr from "./Rnr";
-import Images from "./IMages";
-
-
-
+import Images from "./Images";
 
 const Lotus = () => {
   

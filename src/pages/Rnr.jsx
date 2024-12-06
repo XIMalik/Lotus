@@ -13,9 +13,9 @@ const Rnr = () => {
       </span>
       </div>
       <div className="w-full flex flex-col md:flex-row gap-3 justify-center items-center">
-        <div className="holder w-[100%] md:w-[50%] h-[350px] md:h-[300px] flex">
+        <div className="holder w-[100%] md:w-[50%] md:h-[300px] flex">
           <div className="receipt bg-white w-[100%] rounded-md h-[100%] p-8 flex flex-col justify-evenly">
-            <div className="flex justify-between text-xs mb-5 border-dashed rounded-md border-[0.5px] p-3">
+            <div className="flex justify-between text-sm mb-5 border-dashed rounded-md border-[0.5px] p-3">
               <span className="text-black/30">Type</span>
               <span className="text-black/70">
                 Reservation Price <span className="text-black/30">/ day</span>
@@ -23,7 +23,7 @@ const Rnr = () => {
             </div>
             <hr className="mb-5 border-dotted" />
 
-            <div className="details flex flex-col gap-2 text-lg">
+            <div className="details flex flex-col gap-2 text-md md:text-lg">
               <div className="flex justify-between items-center mb-5 border-dashed rounded-xl">
                 <span className="text-black/50">Studio apartment</span>
                 <span className="text-black/70 font-bold">
@@ -57,6 +57,7 @@ const Rnr = () => {
             <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/24/d5934d/marker--v1.png" alt="marker--v1"/>42 Gerewu Road, Islamic Village, Ilorin, Kwara State</div></a>
           </div>
         </div>
+
         <div className="w-full md:w-[50%] h-[300px] flex flex-col gap-5 justify-center rounded-md p-10 bg-white tomake">
           <h1 className="text-white text-lg  text-center">
             To make a reservation or for more inquiries, reach us through either

@@ -28,7 +28,7 @@
 }
 
 .tomake{
-  background-image: linear-gradient(to bottom, #2d2c2c90, #d5934d55),
+  background-image: linear-gradient(to bottom, #2d2c2c90, #d5934d8e),
   url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D'); 
   background-size: cover;
 }

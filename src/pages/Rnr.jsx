@@ -2,54 +2,68 @@ import React from "react";
 
 const Rnr = () => {
   return (
-    <div className="rnr px-10 py-[60px] flex flex-col relative">
-      <h1 className="text-[#d5934d] text-lg text-left">
-        Rates & Reservation
-      </h1>
+    <div className="rnr px-10 py-[40px] h-fit flex flex-col gap-4  relative">
+      <div className="flex flex-col gap-2">
+      <h1 className="text-[#d5934d] text-lg text-left">Rates & Reservation</h1>
 
       <span className="leading-loose text-[#1B1D42]/50 mb-7 w-full lg:w-[60%]">
-        Indulge in comfort at Lotus Residences Shortlets. Thoughtfully designed
+        Indulge in comfort at Lotus Residences Shortlets, Ilorin. Thoughtfully designed
         amenities await your arrival for a seamless and enjoyable stay. Welcome
         to your home away from home.
       </span>
-      <div className="w-full h-full flex flex-col md:flex-row gap-3 justify-center items-center">
-        <div className="holder w-[100%] md:w-[50%] h-full flex">
-          <div className="receipt bg-white shadow-lg w-[100%] rounded-md h-fit p-8 flex flex-col justify-evenly">
+      </div>
+      <div className="w-full flex flex-col md:flex-row gap-3 justify-center items-center">
+        <div className="holder w-[100%] md:w-[50%] h-[350px] md:h-[300px] flex">
+          <div className="receipt bg-white w-[100%] rounded-md h-[100%] p-8 flex flex-col justify-evenly">
             <div className="flex justify-between text-xs mb-5 border-dashed rounded-md border-[0.5px] p-3">
               <span className="text-black/30">Type</span>
-              <span className="text-black/70">Reservation <span className="text-black/30">/night</span></span>
+              <span className="text-black/70">
+                Reservation Price <span className="text-black/30">/ day</span>
+              </span>
             </div>
             <hr className="mb-5 border-dotted" />
 
-            <div className="details flex flex-col gap-2">
+            <div className="details flex flex-col gap-2 text-lg">
               <div className="flex justify-between items-center mb-5 border-dashed rounded-xl">
                 <span className="text-black/50">Studio apartment</span>
-                <span className="text-black/70 ">₦25000.00</span>
+                <span className="text-black/70 font-bold">
+                  ₦35000.00
+                </span>
               </div>
               <div className="flex justify-between mb-5 border-dashed rounded-xl">
                 <span className="text-black/50">1-bedroom apartment</span>
-                <span className="text-black/70">₦45000.00</span>
+                <span className="text-black/70 font-bold">
+                  ₦50000.00
+                </span>
               </div>
               <div className="flex justify-between mb-5 border-dashed rounded-xl">
                 <span className="text-black/50">2-bedroom apartment</span>
-                <span className="text-black/70">₦60000.00</span>
+                <span className="text-black/70 font-bold">
+                  ₦70000.00
+                </span>
+              </div>
+              <div className="flex justify-between mb-5 border-dashed rounded-xl">
+                <span className="text-black/50">2 bed maisonette</span>
+                <span className="text-black/70 font-bold">
+                  ₦85000.00
+                </span>
               </div>
             </div>
 
             <hr className="mb-5 border-dotted" />
 
-            <h1 className="text-xs bottom-0 text-center text-[#d5934d] ">
-              Lotus Residence Ilorin
-            </h1>
+            <a target='_blank' href="https://www.google.com/maps/place/Lotus+Residence/@8.4773007,4.4904218,18z/data=!4m9!1m2!2m1!1s42+Gerewu+Road,+Islamic+Village,+Ilorin,+Kwara+State!3m5!1s0x103653ef4de0a005:0x44b9dbdd31e3635f!8m2!3d8.4773009!4d4.4916775!16s%2Fg%2F11l73ps_7n?entry=ttu">
+            <div className="title text-md justify-center text-center font-extrabold text-[#d5934d] flex gap-1 items-center">
+            <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/24/d5934d/marker--v1.png" alt="marker--v1"/>42 Gerewu Road, Islamic Village, Ilorin, Kwara State</div></a>
           </div>
         </div>
-        <div className="w-full md:w-[50%] min-h-[50vh] flex flex-col gap-5 justify-center rounded-md p-10 bg-white tomake">
-          <h1 className="text-white text-md  text-center">
+        <div className="w-full md:w-[50%] h-[300px] flex flex-col gap-5 justify-center rounded-md p-10 bg-white tomake">
+          <h1 className="text-white text-lg  text-center">
             To make a reservation or for more inquiries, reach us through either
             of the following avenues
           </h1>
           <div className="icons flex gap-5 justify-center w-full">
-            <div className="icon">
+            <div className="icon hover:translate-y-[-5px] ease-in-out duration-500">
               <a href="https://wa.me/+2348065771879">
                 <img
                   width="48"
@@ -59,7 +73,8 @@ const Rnr = () => {
                 />{" "}
               </a>
             </div>
-            <div className="icon">
+            <div className="icon hover:translate-y-[-5px] ease-in-out duration-500">
+              {" "}
               <a href="https://instagram.com/lotusresidencesilorin">
                 <img
                   width="48"
@@ -69,7 +84,8 @@ const Rnr = () => {
                 />
               </a>
             </div>
-            <div className="icon">
+            <div className="icon hover:translate-y-[-5px] ease-in-out duration-500">
+              {" "}
               <a href="tel:+2348065771879">
                 <img
                   width="40"
@@ -85,5 +101,7 @@ const Rnr = () => {
     </div>
   );
 };
+
+
 
 export default Rnr;
